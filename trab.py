@@ -92,8 +92,8 @@ def encontrar_maiores_ordens(pontos, a, p):
     return pontos_ordenados[:50]
 
 
-if _name_ == "_main_":
-    """" 
+if __name__ == "__main__":
+    """
     Recebe os parâmetros da curva (a, b, p)
     Encontra todos os pontos da curva
     Identifica pontos de maior ordem
@@ -102,7 +102,7 @@ if _name_ == "_main_":
         Gera chaves públicas: A = mG e B = nG
         Calcula chaves compartilhadas: R = mB e S = nA
         Verifica se R = S (deve ser igual pela propriedade comutativa)
-    """"
+    """
     a = int(input("Digite o valor de a: "))
     b = int(input("Digite o valor de b: "))
     p = int(input("Digite um número primo p: "))
